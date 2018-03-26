@@ -365,11 +365,12 @@ header.masthead p {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
+  animation: blinkit 2.5s infinite; 
 }
 
-.fade_img:hover {
+/* .fade_img:hover {
   opacity: 0.3;
-}
+} */
 
 .fade_img_logo {
   opacity: 0.8;
@@ -378,4 +379,25 @@ header.masthead p {
 
 .fade_img_logo:hover {
   opacity: 1;
+}
+
+@-webkit-keyframes blinkit {
+  0%   { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+@-moz-keyframes blinkit {
+  0%   { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+@-o-keyframes blinkit {
+  0%   { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
+}
+@keyframes blinkit {
+  0%   { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; }
 }
