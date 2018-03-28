@@ -381,6 +381,26 @@ header.masthead p {
   opacity: 1;
 }
 
+.profile-img {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+  height: 300px;
+}
+
+.row-padded {
+  padding-top: 50px;
+}
+
+.social-links {
+  padding: 10px 0 15px 0;
+}
+
+.social-links > a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
 @-webkit-keyframes blinkit {
   0%   { opacity: 1.0; }
   50% { opacity: 0.3; }
