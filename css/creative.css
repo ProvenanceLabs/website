@@ -401,6 +401,15 @@ header.masthead p {
   text-decoration: none;
 }
 
+#contact {
+  padding: 2rem 0;
+}
+
+#contact > .container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 @-webkit-keyframes blinkit {
   0%   { opacity: 1.0; }
   50% { opacity: 0.3; }
