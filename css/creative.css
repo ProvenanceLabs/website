@@ -164,8 +164,6 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #CF452C;
-    -webkit-filter: invert(1);
-    filter: invert(1);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #CF452C;
