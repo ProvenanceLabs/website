@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 hr {
@@ -19,14 +19,16 @@ hr.light {
 }
 
 a {
-  color: #CF452C;
+  color: #393e4c;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  font-weight: 700;
 }
 
 a:hover {
-  color: #CF452C;
+  color: #393e4c;
+  font-weight: 700;
 }
 
 h1,
@@ -35,15 +37,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400 !important;
 }
 
 .bg-primary {
-  background-color: #CF452C !important;
+  background-color: white !important;
+  color: #393e4c !important;
 }
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-primary > .container {
+  margin-top : 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .text-faded {
@@ -51,7 +60,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .section-heading {
@@ -83,7 +92,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -93,7 +102,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #CF452C;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
   width:120px;
   height:auto;
 }
@@ -106,7 +115,6 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
   font-weight: 700;
-  text-transform: uppercase;
   color: #212529;
 }
 
@@ -130,6 +138,8 @@ img::-moz-selection {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
+    padding: 0 1em !important;
+    opacity: 0.75;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -138,7 +148,7 @@ img::-moz-selection {
     color: #fff;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -173,8 +183,8 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header4.jpg");´
-  background-position: center center;
+  background-image: url("../img/header3.png");
+  background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -188,7 +198,7 @@ header.masthead hr {
 }
 
 header.masthead h1 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 header.masthead p {
@@ -197,7 +207,7 @@ header.masthead p {
 
 @media (min-width: 768px) {
   header.masthead p {
-    font-size: 1.45rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -209,28 +219,30 @@ header.masthead p {
     padding-bottom: 0;
   }
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
-    header.masthead {
-      background-attachment: scroll;
-    }
     .navbar-brand {
       -webkit-filter: invert(1);
       filter: invert(1);
+    }
+    header.masthead {
+      height: 90vh;
+      background-position: 70% bottom;
     }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 
 .service-box {
   max-width: 400px;
+  padding-bottom: 30px;
 }
 
 .portfolio-box {
@@ -266,7 +278,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -306,7 +318,10 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 6px !important;
+  opacity: 0.8;
+  text-transform: none;
 }
 
 .btn-xl {
@@ -314,17 +329,25 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #CF452C;
-  border-color: #CF452C;
+  border-radius: 6px !important;
+  opacity: 0.8;
+  text-transform: none;
+  color: #393e4c;
+  background-color: transparent;
+  border: 1px solid #393e4c;
+  outline: none !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #ee4b28 !important;
+  color: #79839f;
+  background-color: transparent !important;
+  border: 1px solid #79839f;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  color: #79839f;
+  background-color: transparent !important;
+  border: 1px solid #79839f;
 }
 
 .btn-secondary {
@@ -343,8 +366,9 @@ header.masthead p {
 }
 
 .icon_img {
-  width: 120px;
+  width: 100px;
   height: auto;
+  padding-bottom: 24px;
 }
 
 .profile_img {
@@ -366,6 +390,11 @@ header.masthead p {
   transition: .5s ease;
   backface-visibility: hidden;
   animation: blinkit 2.5s infinite; 
+  width:auto;
+  max-width: 350px;
+  height: 300px; 
+  margin-top:-10px;
+   margin-bottom:30px;
 }
 
 /* .fade_img:hover {
@@ -402,7 +431,7 @@ header.masthead p {
 }
 
 #contact {
-  padding: 2rem 0;
+  padding: 0 0 3rem 0;
 }
 
 #contact > .container {
@@ -429,4 +458,32 @@ header.masthead p {
   0%   { opacity: 1.0; }
   50% { opacity: 0.3; }
   100% { opacity: 1.0; }
+}
+
+#navbarResponsive {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+p {
+  color: #8c8f96;
+}
+#main-heading-splash {
+  letter-spacing: 14px;
+  text-transform: none !important;
+}
+
+#main-tag-splash {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6em;
+  color: white;
+}
+
+.page-footer {
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 768px) {
+  .sm-text-center {
+    text-align: center;
+  }
 }
