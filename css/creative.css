@@ -39,6 +39,7 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400 !important;
+  color: #393e4c !important;
 }
 
 .bg-primary {
@@ -469,6 +470,7 @@ p {
 #main-heading-splash {
   letter-spacing: 14px;
   text-transform: none !important;
+  color: white !important;
 }
 
 #main-tag-splash {
