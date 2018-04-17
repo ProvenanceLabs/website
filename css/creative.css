@@ -105,6 +105,7 @@ img::-moz-selection {
   font-family: 'Raleway', sans-serif;
   width:120px;
   height:auto;
+  opacity: 1 !important;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -222,10 +223,6 @@ header.masthead p {
 }
 
 @media only screen and (max-width: 992px) {
-    .navbar-brand {
-      -webkit-filter: invert(1);
-      filter: invert(1);
-    }
     header.masthead {
       height: 90vh;
       background-position: 70% bottom;
@@ -384,15 +381,18 @@ header.masthead p {
 }
 
 .fade_img {
-  opacity: 1;
+  
+  width:auto;
+  max-width: 100%;
+  height: 300px; 
+  margin-bottom:30px;
+}
+
+.fade_img--animated {
+opacity: 1; 
   transition: .5s ease;
   backface-visibility: hidden;
-  animation: blinkit 2.5s infinite; 
-  width:auto;
-  max-width: 350px;
-  height: 300px; 
-  margin-top:-10px;
-   margin-bottom:30px;
+ animation: blinkit 2.5s infinite; 
 }
 
 /* .fade_img:hover {
