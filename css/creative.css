@@ -96,6 +96,7 @@ img::-moz-selection {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  opacity: 0.75;
 }
 
 #mainNav .navbar-brand {
@@ -459,7 +460,7 @@ opacity: 1;
 }
 
 #navbarResponsive {
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem;
 }
 
 p {
