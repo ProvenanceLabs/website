@@ -98,6 +98,7 @@ img::-moz-selection {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   opacity: 0.75;
+  z-index: 990 !important;
 }
 
 #mainNav .navbar-brand {
@@ -491,8 +492,4 @@ p {
 
 .typeform-share {
   margin-top: 0.5rem;
-}
-
-.e4550h41 {
-  z-index: 2000;
 }
