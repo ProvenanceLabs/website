@@ -147,6 +147,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
+    filter: invert(100%);
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
@@ -168,6 +169,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #CF452C;
+    filter: invert(0%);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #CF452C;
@@ -185,7 +187,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header3.png");
+  background-image: url("../img/header5-blue.png");
   background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
