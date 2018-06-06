@@ -483,9 +483,19 @@ p {
 }
 
 .page-footer {
-  background-color: #f8f8f8;
+  background-color: #61487a;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
+.footer-copyright {
+  color: white;
+}
+.footer-copyright > a {
+  color: white;
+  font-weight: 400;
+}
 @media screen and (max-width: 768px) {
   .sm-text-center {
     text-align: center;
@@ -498,4 +508,16 @@ p {
 
 .team-block {
   margin: 0 auto;
+}
+
+.page-footer__social-icons > a  {
+  color: white;
+  margin: 0 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.page-footer__social-icons {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6d5584;
 }
