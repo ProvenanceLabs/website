@@ -320,17 +320,18 @@ p {
 }
 
 .page-footer {
-  background-color: #61487a;
+  border-top:1px solid #f3f3f3;
   color: white;
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
 .footer-copyright {
-  color: white;
+  color: #6d5584;
+  width: 70%;
 }
 .footer-copyright > a {
-  color: white;
+  color: #6d5584;
   font-weight: 400;
 }
 
@@ -338,14 +339,35 @@ p {
   margin-top: 0.5rem;
 }
 
+.page-footer__container {
+  position: relative;
+}
+.page-footer__container  > img {
+  text-align: right;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .page-footer__container > img {
+    width: 30%;
+    top: 0;
+  }
+}
+
 .page-footer__social-icons > a  {
-  color: white;
+  color: #6d5584;
   margin: 0 5px;
   font-size: 14px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .page-footer__social-icons {
   padding-bottom: 20px;
-  border-bottom: 1px solid #6d5584;
+  text-align: left;
+  width: 70%;
 }
