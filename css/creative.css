@@ -1,8 +1,9 @@
 
 /* Import Fonts */
 @font-face {
+    font-face: 'DrukText-Medium';
     font-family: 'DrukText-Medium';
-    src: url('fonts/druk/DrukText-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/druk/DrukText-Medium.otf') format('opentype'), url('fonts/druk/DrukText-Medium.woff') format('woff'), url('fonts/druk/DrukText-Medium.ttf') format('truetype'), url('fonts/druk/DrukText-Medium.svg#DrukText-Medium') format('svg');
+    src: url('./fonts/druk/DrukText-Medium.eot?#iefix') format('embedded-opentype'), url('./fonts/druk/DrukText-Medium.otf') format('opentype'), url('./fonts/druk/DrukText-Medium.woff') format('woff'), url('./fonts/druk/DrukText-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
