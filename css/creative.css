@@ -136,7 +136,17 @@ body {
     align-self: flex-end;
 }
 
-
+.grid {
+    flex-direction: row;
+}
+.grid > img {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    max-width: 40%;
+    margin: 0 2.5% 20px 2.5%;
+    height: 60px;
+}
 /* Specific Views */
 /* .splash {
     background: url('../img/bg.jpg');
@@ -164,6 +174,16 @@ body {
 
     .img-box--small {
         width: 60%;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+    .grid > img {
+        display: block;
+        max-width: 50%;
+        margin: 0 auto 20px auto;
+        height: 60px;
     }
 }
 
@@ -196,6 +216,14 @@ body {
     .split-view--padding-top {
         margin-top: 50px
     }
+
+    .grid > img {
+        display: block;
+        max-width: 70%;
+        margin: 0 auto 20px auto;
+        height: 60px;
+    }
+    
 }
 
 @media screen and (max-width: 550px) {
