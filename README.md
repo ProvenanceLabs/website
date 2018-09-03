@@ -1,2 +1,2 @@
 # Edjo Website
-Initial Website Created by [Karolis](https://github.com/KaroliShp)
+Static Landing Page for https://edjo.io

@@ -147,6 +147,19 @@ body {
     margin: 0 2.5% 20px 2.5%;
     height: 60px;
 }
+
+.button {
+    width: 120px;
+    color: #fdfdfd;
+    background-color: #222222;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'DrukText-Medium';
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+}
 /* Specific Views */
 /* .splash {
     background: url('../img/bg.jpg');
@@ -251,6 +264,7 @@ body {
         min-height: 300px;
         /* margin-top: 0px; */
         margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     .split-view__mobile-bottom {
