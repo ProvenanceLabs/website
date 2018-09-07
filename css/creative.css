@@ -209,7 +209,7 @@ body {
 	width:10px;
 	height:10px;
 	display: block;
-	border:1px solid #222222;
+	border:1px solid #d0d0d0;
 	border-radius:50%;
 	content:'';
 	position: absolute;
