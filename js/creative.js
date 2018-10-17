@@ -1,7 +1,7 @@
 $(function() {
   $.scrollify({
     section: ".section",
-    scrollbars:false,
+    scrollbars: true,
     before:function(i,panels) {
       var ref = panels[i].attr("data-section-name");
       $(".pagination .active").removeClass("active");
