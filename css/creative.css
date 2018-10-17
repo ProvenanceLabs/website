@@ -167,6 +167,12 @@ body {
 /* .splash {
     background: url('../img/bg.jpg');
 } */
+.splash-img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
 .pagination {
     position: fixed;
     right: 50px;
