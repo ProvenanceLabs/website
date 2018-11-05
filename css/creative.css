@@ -141,15 +141,18 @@ body {
 
 .grid {
     flex-direction: row;
+    justify-content: flex-start;
 }
-.grid > img {
+.grid > img,
+.grid > a {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    max-width: 40%;
     margin: 0 2.5% 20px 2.5%;
     height: 60px;
+    color: #222222;
 }
+
 
 .button {
     width: 120px;
@@ -252,7 +255,8 @@ body {
     .grid {
         flex-direction: column;
     }
-    .grid > img {
+    .grid > img,
+    .grid > a {
         display: block;
         max-width: 50%;
         margin: 0 auto 20px auto;
@@ -290,7 +294,8 @@ body {
         margin-top: 50px
     }
 
-    .grid > img {
+    .grid > img,
+    .grid > a {
         display: block;
         max-width: 70%;
         margin: 0 auto 20px auto;
