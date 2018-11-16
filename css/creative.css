@@ -17,7 +17,7 @@ body {
 
 .bold {
     font-family: 'DrukText-Medium';
-    color: #222222;
+    color: #030028;
 }
 
 .text {
@@ -52,6 +52,14 @@ body {
     letter-spacing: 5px;
 }
 
+.alternate {
+    color: #ebeaea;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
 .banner {
     font-size: 12em;
     color: #ebeaea;
@@ -62,6 +70,14 @@ body {
 .banner > span {
     font-size: 15rem;
     text-decoration: underline;
+}
+
+.social {
+    padding-top: 30px;
+}
+.social > a  {
+    color: white;
+    margin: 0 20px;
 }
 /* CSS Views */
 
@@ -78,6 +94,14 @@ body {
 }
 .section-full {
     max-width: 100%;
+    background: #030028;
+    background: -moz-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #030028), color-stop(73%, #41295a), color-stop(82%, #41295a), color-stop(92%, #41295a), color-stop(100%, #41295a));
+    background: -webkit-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
+    background: -o-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
+    background: -ms-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
+    background: linear-gradient(to right, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030028', endColorstr='#41295a', GradientType=1 );
 }
 
 .split-view {
@@ -159,6 +183,11 @@ body {
     max-width: 100%;
     min-width: 100%;
     max-height: 100%;
+    margin: 0 auto;
+}
+
+.grid--small > a {
+    width: 15%;
 }
 
 .button {
@@ -173,12 +202,18 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.button--alternate {
+    background-color: #ebeaea; 
+    color: #030028;
+}
 /* Specific Views */
 /* .splash {
     background: url('../img/bg.jpg');
 } */
 .splash-img {
-    max-width: 90%;
+    width: 90%;
+    max-width: 1200px;
     display: block;
     margin: 0 auto;
 }
@@ -242,6 +277,7 @@ body {
     }
     .section-full {
         width: 100%;
+        
     }
     .banner {
         font-size: 7em;
