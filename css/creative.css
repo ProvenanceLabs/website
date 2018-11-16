@@ -142,17 +142,24 @@ body {
 .grid {
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
-.grid > img,
+
 .grid > a {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-    margin: 0 2.5% 20px 2.5%;
-    height: 60px;
+    margin: 0 2.5% 30px 2.5%;
+    height: 80px;
     color: #222222;
+    width: 45%;
 }
 
+.grid > a > img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+}
 
 .button {
     width: 120px;
@@ -255,10 +262,9 @@ body {
     .grid {
         flex-direction: column;
     }
-    .grid > img,
     .grid > a {
         display: block;
-        max-width: 50%;
+        max-width: 60%;
         margin: 0 auto 20px auto;
         height: 60px;
     }
@@ -294,10 +300,9 @@ body {
         margin-top: 50px
     }
 
-    .grid > img,
     .grid > a {
         display: block;
-        max-width: 70%;
+        max-width: 90%;
         margin: 0 auto 20px auto;
         height: 60px;
     }
