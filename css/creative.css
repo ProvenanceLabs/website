@@ -1,12 +1,16 @@
 
 /* Import Fonts */
-@font-face {
-    font-face: 'DrukText-Medium';
-    font-family: 'DrukText-Medium';
-    src: url('./fonts/druk/DrukText-Medium.eot?#iefix') format('embedded-opentype'), url('./fonts/druk/DrukText-Medium.otf') format('opentype'), url('./fonts/druk/DrukText-Medium.woff') format('woff'), url('./fonts/druk/DrukText-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/*
+#0a0b26
+#953ad5
+#25ccc3
+#01b9f9
+#1ed0f9
+#dd3184
+#f7ce23
+#f98d2b
+
+ */
 
 body {
     background-color: #FDFDFD;
@@ -16,15 +20,19 @@ body {
 }
 
 .bold {
-    font-family: 'DrukText-Medium';
-    color: #030028;
+    font-family: circe-rounded, sans-serif;
+    font-weight: 700;
+    color: #0a0b26;
+    word-wrap: break-word
 }
 
 .text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: circe-rounded, sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
-    color: #222222;
+    color: #0a0b26;
     margin-top: 0;
+    word-wrap: break-word
 }
 
 .center {
@@ -36,6 +44,10 @@ body {
     margin: 0px 0 20px 0;
 }
 
+.heading--alternate {
+    color: #25ccc3;
+    padding: 50px 0 0px 0;
+}
 .heading--big {
     font-size: 45vw;
     margin: 0;
@@ -87,6 +99,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 100px 0;
+    border-bottom: 1px solid #25ccc3;
+    box-sizing: border-box;
 }
 
 .section--inverted {
@@ -94,16 +109,15 @@ body {
 }
 .section-full {
     max-width: 100%;
-    background: #030028;
-    background: -moz-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #030028), color-stop(73%, #41295a), color-stop(82%, #41295a), color-stop(92%, #41295a), color-stop(100%, #41295a));
-    background: -webkit-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
-    background: -o-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
-    background: -ms-linear-gradient(left, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
-    background: linear-gradient(to right, #030028 0%, #41295a 73%, #41295a 82%, #41295a 92%, #41295a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030028', endColorstr='#41295a', GradientType=1 );
+    background: #0a0b26;
+    min-height: 100vh;
+    padding: 0 !important;
 }
 
+.section-medium {
+    max-width: 1800px;
+    margin: 0 auto;
+}
 .split-view {
     display: -ms-flex;
 	display: -webkit-flex;
@@ -133,14 +147,18 @@ body {
 }
 
 .img-box {
-    height: 80%;
+    height: 50%;
     width: 80%;
     /* box-shadow: 0 10px 20px 0 rgba(34, 34, 34, 0.19), 0 6px 6px 0 rgba(34, 34, 34, 0.23); */
     border-radius: 5px;
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.img-box--special {
+    width: 100%;
 }
 
 .img-box > img {
@@ -196,21 +214,30 @@ body {
     background-color: #222222;
     text-decoration: none;
     font-size: 2em;
-    font-family: 'DrukText-Medium';
+    font-family: circe-rounded, sans-serif;
     text-align: center;
     padding: 15px 0;
     display: block;
     margin: 0 auto;
+    font-weight: 700;
 }
 
 .button--alternate {
-    background-color: #ebeaea; 
-    color: #030028;
+    background-color: #25ccc3; 
+    color: #0a0b26;
+}
+
+.button--big {
+    width: 200px;
+    margin: 0;
 }
 /* Specific Views */
 /* .splash {
     background: url('../img/bg.jpg');
 } */
+.splash {
+    background: #0a0b26 !important;
+}
 .splash-img {
     width: 90%;
     max-width: 1200px;
@@ -218,6 +245,10 @@ body {
     margin: 0 auto;
 }
 
+.splash-platform {
+    width: 1000px;
+    position: absolute;
+}
 .pagination {
     position: fixed;
     right: 50px;
@@ -247,7 +278,7 @@ body {
 	-webkit-transition: opacity 0.5s ease;
 	transition: opacity 0.5s ease;
     padding-right: 15px;
-    font-family: 'DrukText-Medium';
+    font-family: circe-rounded, sans-serif;
     color: #222222;
 }
 
@@ -271,6 +302,11 @@ body {
 }
 
 /* Responsive Small Screen */
+@media screen and (max-width: 1800px) {
+    .section-medium {
+        width: 90%;
+    }
+}
 @media screen and (max-width: 1200px) {
     .section {
         width: 90%;
