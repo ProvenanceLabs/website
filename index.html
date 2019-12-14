@@ -79,8 +79,8 @@
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+        .then(response => alert("Success! Keep an eye out for an invitation soon"))
+        .catch(error => alert("Something went wrong, please try again"))
     })
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -92,9 +92,5 @@
 
       gtag('config', 'UA-120469624-1');
     </script>
-     <!-- Typeform script -->
-     <script> 
-        (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
-     </script>
   </body>
 </html>
