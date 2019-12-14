@@ -78,9 +78,8 @@
     
     form.addEventListener('submit', e => {
         e.preventDefault()
+        alert("Success! Keep an eye out for an invitation email")
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Success! Keep an eye out for an invitation soon"))
-        .catch(error => alert("Something went wrong, please try again"))
     })
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
